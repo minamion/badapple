@@ -11,7 +11,7 @@ BadAppleFrameReader.prototype._downloadPart = function (iPart, fn){
             this.onload = this.onreadystatechange = null;
         }
     };
-    scriptEl.setAttribute('src', 'BadApple/BadApple'+iPart+'.js');
+    scriptEl.setAttribute('src', 'BadApple/BadApple!!'+iPart+'.js');
     document.getElementsByTagName('head')[0].appendChild(scriptEl);
 };
 BadAppleFrameReader.prototype.available = function (fn){
